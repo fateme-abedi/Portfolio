@@ -1,0 +1,175 @@
+// Tablet and Smaller
+@media (max-width: 800px) {
+  #header-home {
+    height: 30rem;
+    .header-content {
+      padding-top: 5%;
+    }
+
+    h1 {
+      font-size: 1rem;
+    }
+  }
+
+  #home {
+    &-a {
+      .specials div {
+        border: 2px solid $light-color;
+        padding: 1rem;
+      }
+    }
+  }
+
+  #home-c .process {
+    grid-template-columns: 1fr;
+    grid-gap: 0.5rem;
+  }
+
+  #home-c .process > div {
+    border-bottom: 3px solid $light-color;
+  }
+}
+
+// SmartPhone
+@media (max-width: 500px) {
+  #main-nav {
+    flex-direction: column;
+    align-items: center;
+
+    li {
+      padding: 1rem;
+    }
+  }
+
+  #header {
+    &-home {
+      height: 10rem;
+      border-bottom: 3px solid $main-color;
+      background-position: 20% 30%;
+
+      .header-content {
+        display: none;
+      }
+    }
+
+    &-inner {
+      height: 10rem;
+    }
+  }
+
+  //   Stack Grid
+  #home-a .specials,
+  #home-b .stats,
+  #home-c .process,
+  #about-d .testimonials,
+  .items {
+    grid-template-columns: 1fr;
+    grid-gap: 0.5rem;
+  }
+  // Home
+  #home {
+    &-a {
+      .specials div {
+        border-bottom: 2px solid $light-color;
+        padding-bottom: 1rem;
+
+        &:last-child {
+          border: none;
+          padding-bottom: 0;
+        }
+      }
+    }
+
+    &-c .process > div {
+      border-bottom: 3px solid $light-color;
+    }
+  }
+
+  //   About
+  #about {
+    &-a {
+      .about-info {
+        grid-template-areas:
+          'bioimg'
+          'bio'
+          'aw1'
+          'aw2'
+          'aw3';
+      }
+    }
+
+    &-c {
+      display: none;
+    }
+  }
+
+  //   Contact
+  #contact {
+    &-a {
+      .text-fields {
+        grid-template-areas:
+          'name'
+          'subject'
+          'email'
+          'phone'
+          'message';
+      }
+    }
+
+    &-b {
+      .contact-info {
+        grid-template-columns: 1fr;
+      }
+      div {
+        border-bottom: 1px solid #555;
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+
+        &:last-child {
+          border: none;
+          margin: 0;
+          padding: 0;
+        }
+      }
+    }
+
+    &-c {
+      h1 {
+        font-size: 2rem;
+        font-weight: bold;
+      }
+    }
+  }
+
+  //   Footer
+  #main-footer {
+    height: 7rem;
+    .footer-content {
+      height: 5rem;
+      flex-direction: column;
+      padding: 1rem;
+    }
+  }
+}
+
+// LandScape
+@media (max-height: 580px) {
+  #header-home {
+    .header-content {
+      padding-top: 3rem;
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
+
+@media (max-height: 330px) {
+  #header-home {
+    .header-content {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+}
